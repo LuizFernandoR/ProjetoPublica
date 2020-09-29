@@ -17,6 +17,7 @@ def chama_consulta():
     comando_SQL = 'select num_cad_jogo,placar_cad_jogo,min_temporada,max_temporada,quebra_recorde_min,quebra_recorde_max from cadastro_jogo'
     cursor.execute(comando_SQL)
     dados_lidos = cursor.fetchall()
+    print(dados_lidos)
     
 
     consulta.tableWidget.setRowCount(len(dados_lidos))
@@ -33,13 +34,13 @@ def funcao_principal():
     qbr_rcd_max = 0
     min_temp =  'select max(min_temporada) from cadastro_jogo'
     max_temp =  'select max(max_temporada) from cadastro_jogo'
-
     
     campo1 = cadastro.lineEdit.text()
     campo2 = int(cadastro.lineEdit_2.text())
     cadastro.lineEdit.setText('')
     cadastro.lineEdit_2.setText('')
     
+
     if campo2 > max_temp:
         max_temp = campo2
         min_temp = min_temp
@@ -53,7 +54,7 @@ def funcao_principal():
 
 
     cursor = banco.cursor()
-    comando_SQL = 'INSERT INTO cadastro_jogo (num_cad_jogo,placar_cad_jogo,min_temporada,max_temporada,quebra_recorde_min,quebra_recorde_max) values (%d,%d,%d,%d,%d,%d)'
+    comando_SQL = 'INSERT INTO cadastro_jogo (num_cad_jogo,placar_cad_jogo,min_temporada,max_temporada,quebra_recorde_min,quebra_recorde_max) values (%s,%s,%s,%s,%s,%s)'
     dados = int(campo1),int(campo2),int(min_temp),int(max_temp),int(qbr_rcd_min),int(qbr_rcd_max)
     cursor.execute(comando_SQL,dados)
     banco.commit()
