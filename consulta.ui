@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>658</width>
-    <height>602</height>
+    <height>604</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,18 +42,123 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>90</y>
+      <y>80</y>
       <width>611</width>
       <height>471</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(229, 253, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
 gridline-color: rgb(15, 16, 17);
 border-color: rgb(16, 16, 16);
-background-color: rgb(255, 228, 251);
-</string>
+background-color: rgb(255, 255, 255);</string>
     </property>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Jogo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Pontos</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Mín temp</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Máx temp</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quebra rcd mín</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quebra rcd máx</string>
+     </property>
+    </column>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

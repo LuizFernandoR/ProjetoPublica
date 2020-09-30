@@ -1,0 +1,34 @@
+                Sistema de acompanhamento de resultados dos jogos
+
+Resumo: Este sistema ajudará a usuária  acompanhar com mais facilidade e agilidade seus resultados,
+assim como também adicinar seus pontos a cada novo jogo que ela participar, facilitando o acompanhamento
+de seus resultados.
+
+Objetivo: O objetivo desta aplicação é facilitar a vida da usuária com seus resultados dos jogos,
+ela pode estar inserindo seus pontos e consultando os mesmos, sendo que ela apenas irá inserir o 
+número do jogo e a quantidade de pontos que ela realizou na partida atual, o sistema irá fazer o 
+cálculo dos pontos e irá trazer o valor de todas os resultados atualizados para ela no momento da consulta
+sendo que o sistema trará os resultados de todos os jogos inserido na tabela.
+
+Desenvolvimento do sistema: Para desenvolver este sistema foi utilizado o banco de dados MySQL o servidor Xamp
+e a ferramenta WorkBench, foi criado apenas uma tabela, pelo fato do sistema ter poucas funcionaliades, 
+a tabela com nome cadastro_jogo tem 7 colunas sendo que todas são de números inteiros not null, foi criado uma restrição 
+Primary key para o campo id_cad_jogo  para que ele seja um identificador e não possa ter valores repetidos,o mesmo também 
+é auto_increment para que o sistema faça a inserção do número em ordem decimal, este campo é o primerio da tabela, em seguida
+vem o campo num_cad_jogo este campo a usuária que irá inserir o valor, este número é referente ao jogo que ela está participando, 
+o próximo campo é placar_cad_jogo que é onde vai ser inserido os pontos da partida, em sequência vem min_temporada que é 
+inserido por calculos feito pelo sistema, assim também como o max_temporada que é próximo campo, depois vem o campo quebra_recorde_min, e 
+quebra_recorde_max que será inserido por comparações feita no código em Python.
+    Neste sistemas temos três telas de interface gráfica, a primeira tela tem uma saudação a usuária e dois botões, sendo
+um para consultar os resultados dos jogos e outro para cadastrar novos jogos. Ao clicar no botão de consultar irá aparecer 
+outra tela que é a tela de consulta, com todos os campos determinados e com seus respectivos valores atualizado. ao clicar
+no botão cadastrar vai abrir uma janela para a usuária estar cadastrando, nesta interface tem dois inputs sendo um para
+inserir o número do jogo que ela está participando e o outro input é para inserir os pontos realizado pela a usuária no jogo,
+por fim tem um botão enviar que ao clicar o sistema faz comparações com os números inserido e atualiza a tabela na base de dados. 
+Para o desenvolvimento das telas foi utilizado o QT Designer, que é uma platarforma para criar interface gráfica, podendo 
+inserir botões, cores, label, inputs e muitas outras coisas que precisa ter uma interface.depois das tela prontas foi utilizado
+o Visual Studio Code para estar concluindo o restante do sistema, a linguagem de programção utilizada foi Python para estar fazendo 
+comparações e funções chamnado as respectivas telas. No início do código foi feito importações do pacote PyQt5 foi importado uic,QtWidgets
+que é um documento .ui que vem do Qt Designer, e outra importação foi o mysql.connector, que permite a conecção com o banco de dados MySQL.
+
+
