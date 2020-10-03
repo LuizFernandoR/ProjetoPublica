@@ -1,4 +1,4 @@
-                Sistema de acompanhamento de resultados dos jogos
+                Sistema de acompanhamento dos resultados dos jogos
 
 Resumo: Este sistema ajudará a usuária  acompanhar com mais facilidade e agilidade seus resultados,
 assim como também adicinar seus pontos a cada novo jogo que ela participar, facilitando o acompanhamento
